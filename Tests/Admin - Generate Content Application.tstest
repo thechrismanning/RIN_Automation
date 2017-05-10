@@ -1259,12 +1259,12 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "1f51e7c0-9e58-46a9-8445-e5d4269d26c9",
-            "Description": "Wait for '1000' msec.",
+            "Description": "Wait for '8000' msec.",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.SleepActionDescriptor",
               "__value": {
-                "WaitTime": 1000,
+                "WaitTime": 8000,
                 "WaitOnElements": true,
                 "WaitOnElementsTimeout": 30000,
                 "UseStepWaitOnElementsTimout": false,
