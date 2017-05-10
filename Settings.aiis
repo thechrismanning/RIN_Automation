@@ -11,7 +11,7 @@
     "BaseClassName": "BaseWebAiiTest",
     "UrlRecordMode": 2,
     "HighlightBorderColor": -65536,
-    "HighlightBorderSize": 5,
+    "HighlightBorderSize": 1,
     "CodeGenerationElementIdentificationType": 1,
     "UrlHistory": [],
     "AbsoluteDragDropRecording": true,
@@ -193,7 +193,7 @@
       }
     },
     "IsOnline": true,
-    "ProjectLanguage": 2,
+    "ProjectLanguage": 1,
     "ProjectReferences": [
       "System",
       "System.Core",
@@ -219,6 +219,6 @@
     "BugAddAttachment": true,
     "BugAutoSubmit": false,
     "BugDescriptionMask": "{Description}",
-    "SelectedBrowserOption": 2
+    "SelectedBrowserOption": 0
   }
 }

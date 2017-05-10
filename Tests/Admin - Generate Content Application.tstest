@@ -73,7 +73,7 @@
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ClickActionDescriptor",
               "__value": {
-                "SimulateRealClick": true,
+                "SimulateRealClick": false,
                 "UsejQuery": true,
                 "UseBackupSearch": true,
                 "ClosesBrowser": false,
@@ -184,7 +184,7 @@
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ClickActionDescriptor",
               "__value": {
-                "SimulateRealClick": true,
+                "SimulateRealClick": false,
                 "UsejQuery": true,
                 "UseBackupSearch": true,
                 "ClosesBrowser": false,
@@ -297,7 +297,7 @@
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ClickActionDescriptor",
               "__value": {
-                "SimulateRealClick": true,
+                "SimulateRealClick": false,
                 "UsejQuery": true,
                 "UseBackupSearch": true,
                 "ClosesBrowser": false,
@@ -1017,124 +1017,38 @@
         {
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
-            "Runtime ID": "e6dfb7e0-ee3d-4275-a6ee-d65e13e3429f",
-            "Description": "Enter text '' in 'EditFieldDealerEmail0ValueEmail'",
+            "Runtime ID": "7854abbe-4661-4dd2-a6d5-d24b4eef6c93",
+            "Description": "Enter text 'qa+1@mediacurrent.com' in 'EditFieldDealerEmail0ValueEmail'",
             "CustomDescription": null,
             "Step": {
-              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.SetTextActionDescriptor",
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.CodedStepDescriptor",
               "__value": {
-                "RawText": "",
-                "SimulateRealTyping": false,
-                "TypingSpeed": 50,
-                "KeyHoldTime": 100,
-                "IsPassword": false,
-                "TypingInfo": {
-                  "ElementText": "",
-                  "TypedText": "qa",
-                  "CaretPosition": 0,
-                  "IsTextArea": false,
-                  "IsBackSpace": false
-                },
-                "Encrypt": false,
-                "SupportUnicode": true,
-                "UsejQuery": true,
-                "UseBackupSearch": true,
-                "ClosesBrowser": false,
-                "AjaxTimeout": 0,
-                "Pause": 0,
+                "Code": "            // Enter text 'qa+1@mediacurrent.com' in 'EditFieldDealerEmail0ValueEmail'\r\n            Actions.SetText(Pages.CreateApplicationDrupal.EditFieldDealerEmail0ValueEmail, \"qa+\" + currentDateTime + \"@mediacurrent.com\");\r\n            ",
+                "RequiresSilverlight": false,
+                "WaitOnElements": true,
                 "WaitOnElementsTimeout": 30000,
                 "UseStepWaitOnElementsTimout": false,
-                "WaitOnElements": true,
+                "Pause": 0,
                 "RunsAgainstVersion": "",
                 "Constraints": {
                   "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
                   "__value": {
-                    "ConstraintValues": {
-                      "RunsAgainstVersion": ""
-                    }
+                    "ConstraintValues": {}
                   }
                 },
-                "Elements": {
-                  "textTarget": {
-                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
-                    "__value": {
-                      "Name": "textTarget",
-                      "Region": null,
-                      "Page": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
-                        "__value": {
-                          "Path": "http://staging.rinnai.us/node/add/application",
-                          "Query": "",
-                          "BaseUrl": "",
-                          "EquivalentUrls": [],
-                          "Fragment": "",
-                          "Title": "Create Application | Drupal",
-                          "CompareMode": 2,
-                          "AlwaysUseTitleInCompare": false,
-                          "FriendlyName": "CreateApplicationDrupal"
-                        }
-                      },
-                      "Frame": null,
-                      "FindInfo": null,
-                      "FindExpression": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.HtmlFindExpressionElement",
-                        "__value": {
-                          "uniqueKey": "o1NGPBKQkPrzOwQRO9ptKOPE7TE=",
-                          "NodeKind": 4,
-                          "TechnologyType": 1,
-                          "Name": "EditFieldDealerEmail0ValueEmail",
-                          "FindExpressions": [
-                            {
-                              "Key": 1,
-                              "Value": {
-                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
-                                "__value": {
-                                  "Clauses": [
-                                    {
-                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
-                                      "__value": {
-                                        "Clause": "id=edit-field-dealer-email-0-value"
-                                      }
-                                    },
-                                    {
-                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
-                                      "__value": {
-                                        "Clause": "tagname=input"
-                                      }
-                                    }
-                                  ],
-                                  "Constraints": [],
-                                  "ChainStops": []
-                                }
-                              }
-                            }
-                          ],
-                          "BackupSearchClause": "/html[1]/body[1]/div[2]/main[1]/div[4]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/input[1]",
-                          "DataBindingExpressions": {}
-                        }
-                      },
-                      "HtmlControlType": "ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail",
-                      "IsIndependent": false,
-                      "DomStateKey": "",
-                      "TechnologyType": 1,
-                      "Version": 200
-                    }
-                  }
-                },
+                "Elements": {},
                 "StepType": 4,
                 "LogMessageOnFailure": "",
                 "EditorType": "",
-                "DataBindingExpressions": {},
-                "_canEncrypt": false,
-                "_cipher": null
+                "DataBindingExpressions": {}
               }
             },
             "Enabled": true,
             "Order": 10,
-            "Id": "",
-            "StepState": 0,
+            "Id": "Admin__Generate_Content_Application_CodedStep",
+            "StepState": 1,
             "ContinueOnFailure": false,
-            "StepImageKey": "Admin - Generate Contentuafubzrf.dx5",
+            "StepImageKey": "Admin - Generate Content Applicationncwssfch.kra",
             "QcId": 0,
             "QcVersionStamp": 0,
             "Version": 200
@@ -1144,12 +1058,12 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "1b84285f-b786-466e-b942-1438866487d3",
-            "Description": "Select 'ByValue' option 'US' on 'EditFieldDealerAddress0AddressCountryCodeSelect'",
+            "Description": "Select 'ByIndex' option '1' on 'EditFieldDealerAddress0AddressCountryCodeSelect'",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.SelectDropDownActionDescriptor",
               "__value": {
-                "SelectType": 1,
+                "SelectType": 0,
                 "SelectionText": "United States",
                 "SelectionValue": "US",
                 "SelectionIndex": 1,
@@ -1259,12 +1173,12 @@
           "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
           "__value": {
             "Runtime ID": "1f51e7c0-9e58-46a9-8445-e5d4269d26c9",
-            "Description": "Wait for '8000' msec.",
+            "Description": "Wait for '1000' msec.",
             "CustomDescription": null,
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.SleepActionDescriptor",
               "__value": {
-                "WaitTime": 8000,
+                "WaitTime": 1000,
                 "WaitOnElements": true,
                 "WaitOnElementsTimeout": 30000,
                 "UseStepWaitOnElementsTimout": false,
@@ -1357,9 +1271,9 @@
                       "Frame": null,
                       "FindInfo": null,
                       "FindExpression": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.HtmlFindExpressionElement",
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
                         "__value": {
-                          "uniqueKey": "4sOZWl8C6eIPVU31SqjY8+elRVg=",
+                          "uniqueKey": "v++iqJmHd7Lq/+H2IU5kdpK14QQ=",
                           "NodeKind": 4,
                           "TechnologyType": 1,
                           "Name": "EditFieldDealerAddress0AddressAddressLine1JJUJc1JeOGsText",
@@ -1373,13 +1287,13 @@
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "id=edit-field-dealer-address-0-address-address-line1--jJUJc1JeOGs"
+                                        "Clause": "tagname=input"
                                       }
                                     },
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "tagname=input"
+                                        "Clause": "id=~edit-field-dealer-address-0-address-address-line1"
                                       }
                                     }
                                   ],
@@ -1483,9 +1397,9 @@
                       "Frame": null,
                       "FindInfo": null,
                       "FindExpression": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.HtmlFindExpressionElement",
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
                         "__value": {
-                          "uniqueKey": "i3v8zyaYvEza/kCFjguVyJeTUFc=",
+                          "uniqueKey": "F4U6Lwd+L049U+JAY5RLE0BxnLE=",
                           "NodeKind": 4,
                           "TechnologyType": 1,
                           "Name": "EditFieldDealerAddress0AddressLocalityGGBxHbMmdjQText",
@@ -1499,13 +1413,13 @@
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "id=edit-field-dealer-address-0-address-locality--gGBxHbMmdjQ"
+                                        "Clause": "tagname=input"
                                       }
                                     },
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "tagname=input"
+                                        "Clause": "id=~edit-field-dealer-address-0-address-locality"
                                       }
                                     }
                                   ],
@@ -1541,6 +1455,121 @@
             "StepState": 0,
             "ContinueOnFailure": false,
             "StepImageKey": "Admin - Generate Content2fejqlhg.wlb",
+            "QcId": 0,
+            "QcVersionStamp": 0,
+            "Version": 200
+          }
+        },
+        {
+          "__type": "ArtOfTest.WebAii.Design.ProjectModel.AutomationStep",
+          "__value": {
+            "Runtime ID": "84e23b79-640c-4885-9612-3a9e9fc0ee4f",
+            "Description": "Select 'ByIndex' option '14' on 'EditFieldDealerAddress0AddressAdministrativeAreaVsnXDbdRGj4Select'",
+            "CustomDescription": null,
+            "Step": {
+              "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.SelectDropDownActionDescriptor",
+              "__value": {
+                "SelectType": 0,
+                "SelectionText": "Florida",
+                "SelectionValue": "FL",
+                "SelectionIndex": 14,
+                "InvokeSelectionChanged": true,
+                "UsejQuery": true,
+                "UseBackupSearch": true,
+                "ClosesBrowser": false,
+                "AjaxTimeout": 0,
+                "Pause": 0,
+                "WaitOnElementsTimeout": 30000,
+                "UseStepWaitOnElementsTimout": false,
+                "WaitOnElements": true,
+                "RunsAgainstVersion": "",
+                "Constraints": {
+                  "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.DescriptorConstraints",
+                  "__value": {
+                    "ConstraintValues": {
+                      "RunsAgainstVersion": ""
+                    }
+                  }
+                },
+                "Elements": {
+                  "dropDown": {
+                    "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
+                    "__value": {
+                      "Name": "dropDown",
+                      "Region": null,
+                      "Page": {
+                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
+                        "__value": {
+                          "Path": "http://staging.rinnai.us/node/add/application",
+                          "Query": "",
+                          "BaseUrl": "",
+                          "EquivalentUrls": [],
+                          "Fragment": "",
+                          "Title": "Create Application | Drupal",
+                          "CompareMode": 2,
+                          "AlwaysUseTitleInCompare": false,
+                          "FriendlyName": "CreateApplicationDrupal"
+                        }
+                      },
+                      "Frame": null,
+                      "FindInfo": null,
+                      "FindExpression": {
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
+                        "__value": {
+                          "uniqueKey": "vZp28kLdIlXZrjQXcbx3KgCQ2/A=",
+                          "NodeKind": 4,
+                          "TechnologyType": 1,
+                          "Name": "EditFieldDealerAddress0AddressAdministrativeAreaVsnXDbdRGj4Select",
+                          "FindExpressions": [
+                            {
+                              "Key": 1,
+                              "Value": {
+                                "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
+                                "__value": {
+                                  "Clauses": [
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "tagname=select"
+                                      }
+                                    },
+                                    {
+                                      "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                                      "__value": {
+                                        "Clause": "id=~edit-field-dealer-address-0-address-administrative-area"
+                                      }
+                                    }
+                                  ],
+                                  "Constraints": [],
+                                  "ChainStops": []
+                                }
+                              }
+                            }
+                          ],
+                          "BackupSearchClause": "/html[1]/body[1]/div[2]/main[1]/div[4]/div[1]/form[1]/div[1]/div[1]/div[6]/details[1]/div[1]/div[1]/div[1]/div[5]/div[2]/select[1]",
+                          "DataBindingExpressions": {}
+                        }
+                      },
+                      "HtmlControlType": "ArtOfTest.WebAii.Controls.HtmlControls.HtmlSelect",
+                      "IsIndependent": false,
+                      "DomStateKey": "",
+                      "TechnologyType": 1,
+                      "Version": 200
+                    }
+                  }
+                },
+                "StepType": 4,
+                "LogMessageOnFailure": "",
+                "EditorType": "",
+                "DataBindingExpressions": {}
+              }
+            },
+            "Enabled": true,
+            "Order": 15,
+            "Id": "",
+            "StepState": 0,
+            "ContinueOnFailure": false,
+            "StepImageKey": "Admin - Generate Content Applicationqukpt52n.luu",
             "QcId": 0,
             "QcVersionStamp": 0,
             "Version": 200
@@ -1609,9 +1638,9 @@
                       "Frame": null,
                       "FindInfo": null,
                       "FindExpression": {
-                        "__type": "ArtOfTest.WebAii.Design.ProjectModel.HtmlFindExpressionElement",
+                        "__type": "ArtOfTest.Common.Design.ProjectModel.Elements.FindExpressionElement",
                         "__value": {
-                          "uniqueKey": "gHFJQdHEUbs0ECFkqjtXNTNKqsw=",
+                          "uniqueKey": "sDHc/ObUsD7MeU6sVcintCXtoZY=",
                           "NodeKind": 4,
                           "TechnologyType": 1,
                           "Name": "EditFieldDealerAddress0AddressPostalCodeM3enj4FwW50Text",
@@ -1625,13 +1654,13 @@
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "id=edit-field-dealer-address-0-address-postal-code--m3enj4FwW50"
+                                        "Clause": "tagname=input"
                                       }
                                     },
                                     {
                                       "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
                                       "__value": {
-                                        "Clause": "tagname=input"
+                                        "Clause": "id=~edit-field-dealer-address-0-address-postal-code"
                                       }
                                     }
                                   ],
@@ -1662,7 +1691,7 @@
               }
             },
             "Enabled": true,
-            "Order": 15,
+            "Order": 16,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -1775,7 +1804,7 @@
               }
             },
             "Enabled": true,
-            "Order": 16,
+            "Order": 17,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -1888,7 +1917,7 @@
               }
             },
             "Enabled": true,
-            "Order": 17,
+            "Order": 18,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -1999,7 +2028,7 @@
               }
             },
             "Enabled": true,
-            "Order": 18,
+            "Order": 19,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -2113,7 +2142,7 @@
               }
             },
             "Enabled": true,
-            "Order": 19,
+            "Order": 20,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -2154,7 +2183,7 @@
               }
             },
             "Enabled": true,
-            "Order": 20,
+            "Order": 21,
             "Id": "",
             "StepState": 0,
             "ContinueOnFailure": false,
@@ -2166,7 +2195,73 @@
         }
       ]
     },
-    "IndependentDescriptors": [],
+    "IndependentDescriptors": [
+      {
+        "__type": "ArtOfTest.Common.Design.Extensibility.Descriptors.ElementDescriptor",
+        "__value": {
+          "Name": "",
+          "Region": null,
+          "Page": {
+            "__type": "ArtOfTest.WebAii.Design.ProjectModel.PageUri",
+            "__value": {
+              "Path": "http://staging.rinnai.us/node/add/application",
+              "Query": "",
+              "BaseUrl": "",
+              "EquivalentUrls": [],
+              "Fragment": "",
+              "Title": "Create Application | Drupal",
+              "CompareMode": 2,
+              "AlwaysUseTitleInCompare": false,
+              "FriendlyName": "CreateApplicationDrupal"
+            }
+          },
+          "Frame": null,
+          "FindInfo": null,
+          "FindExpression": {
+            "__type": "ArtOfTest.WebAii.Design.ProjectModel.HtmlFindExpressionElement",
+            "__value": {
+              "uniqueKey": "o1NGPBKQkPrzOwQRO9ptKOPE7TE=",
+              "NodeKind": 4,
+              "TechnologyType": 1,
+              "Name": "EditFieldDealerEmail0ValueEmail",
+              "FindExpressions": [
+                {
+                  "Key": 1,
+                  "Value": {
+                    "__type": "ArtOfTest.WebAii.Core.HtmlFindExpression",
+                    "__value": {
+                      "Clauses": [
+                        {
+                          "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                          "__value": {
+                            "Clause": "id=edit-field-dealer-email-0-value"
+                          }
+                        },
+                        {
+                          "__type": "ArtOfTest.WebAii.Core.HtmlFindClause",
+                          "__value": {
+                            "Clause": "tagname=input"
+                          }
+                        }
+                      ],
+                      "Constraints": [],
+                      "ChainStops": []
+                    }
+                  }
+                }
+              ],
+              "BackupSearchClause": "/html[1]/body[1]/div[2]/main[1]/div[4]/div[1]/form[1]/div[1]/div[1]/div[5]/div[1]/input[1]",
+              "DataBindingExpressions": {}
+            }
+          },
+          "HtmlControlType": "ArtOfTest.WebAii.Controls.HtmlControls.HtmlInputEmail",
+          "IsIndependent": true,
+          "DomStateKey": "",
+          "TechnologyType": 1,
+          "Version": 200
+        }
+      }
+    ],
     "HtmlDescription": "",
     "SilverlightEnabled": false,
     "IsSilverlightApp": false,
@@ -2178,10 +2273,10 @@
     "UseDefaultWpfAppPath": false,
     "TestAssembly": "Rinnai Regression.dll",
     "TestAssemblyPath": "bin",
-    "TestClass": "",
+    "TestClass": "Rinnai_Regression.Admin___Generate_Content_Application",
     "IsManual": false,
     "ResourceFilePath": "Tests\\Admin - Generate Content Application.resx",
-    "HasCodeBehind": false,
+    "HasCodeBehind": true,
     "DataInfo": {
       "__type": "ArtOfTest.Common.Design.Data.DataInfo",
       "__value": {
