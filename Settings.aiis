@@ -11,7 +11,7 @@
     "BaseClassName": "BaseWebAiiTest",
     "UrlRecordMode": 2,
     "HighlightBorderColor": -65536,
-    "HighlightBorderSize": 1,
+    "HighlightBorderSize": 5,
     "CodeGenerationElementIdentificationType": 1,
     "UrlHistory": [],
     "AbsoluteDragDropRecording": true,
@@ -152,7 +152,7 @@
     "UnitTypeTypeGeneration": 1,
     "RecorderBaseUrl": "",
     "IsStoryBoardCapturingEnabled": true,
-    "SimulateRealClickByDefault": true,
+    "SimulateRealClickByDefault": false,
     "SimulateRealTypingByDefault": false,
     "SimulateRealSilverlightUserByDefault": true,
     "DefaultDropDownSelection": 1,
@@ -219,6 +219,6 @@
     "BugAddAttachment": true,
     "BugAutoSubmit": false,
     "BugDescriptionMask": "{Description}",
-    "SelectedBrowserOption": 0
+    "SelectedBrowserOption": 2
   }
 }

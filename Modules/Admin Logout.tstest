@@ -77,7 +77,7 @@
             "Step": {
               "__type": "ArtOfTest.WebAii.Design.IntrinsicTranslators.Descriptors.ClickActionDescriptor",
               "__value": {
-                "SimulateRealClick": true,
+                "SimulateRealClick": false,
                 "UsejQuery": true,
                 "UseBackupSearch": true,
                 "ClosesBrowser": false,
